@@ -7,8 +7,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>3D Model Overlay</h1>
-    <div id="company-name">StyleTech</div>
+    <h1>StyleTech</h1>
+    <!-- Header -->
+<header class="center">
+    
+    <p class="tagline">Refine Your Backdrop</p>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <div id="company-name"></div>
     <button id="start-camera">Start Camera</button>
     <input type="file" id="upload-image" accept="image/*">
     <div id="controls">
@@ -32,6 +46,33 @@
         <canvas id="canvas"></canvas>
         <canvas id="image-canvas" style="display: none;"></canvas>
     </div>
+    <!-- About Section -->
+    <section id="about" class="animated-section">
+        <h2>About StyleTech</h2>
+        <p>StyleScape uses cutting-edge AR to help you visualize your perfect decor. See your space in a new light, effortlessly.It allows you to overlay virtual decor elements like carpets, wall art, and furniture onto your real environment using your device's camera, providing a realistic preview of potential changes. With curated styles, interactive customization options, and a user-friendly interface, StyleScape empowers you to experiment with designs and create the perfect aesthetic for your home or workspace effortlessly.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="animated-section">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <!-- Footer -->
+    <footer class="center">
+        <p>&copy; 2024 StyleScape. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
+            <a href="https://github.com" target="_blank">GitHub</a> |
+            <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+            <a href="https://www.youtube.com" target="_blank">YouTube</a> |
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r128/examples/js/loaders/GLTFLoader.js"></script>
     <script src="script.js"></script>
